@@ -1,5 +1,5 @@
 let diceArr = [];
-let score = 10;
+let score = 0;
 let justBanked = false;
 
 function initializeDice(){
@@ -23,6 +23,19 @@ function rollDice(){
 	console.log(diceArr)
 	updateDiceImg();
 	justBanked = false;
+	//call function to check if rolled dice fit any condiions to add points
+	//if not, alert Farkle and restart game:
+	//MOVED CODE:
+	//create array with clicked, but not banked dice to be evaluated
+	//create array with clicked, but not banked dice to be evaluated
+	// let bankedDice = [];
+	// for(let i = 0; i < 6; i++){
+	// 	if (diceArr[i].banked===false && diceArr[i].clicked===true){
+
+	// 		bankedDice.push(diceArr[i]);
+	// 		diceArr[i].banked = true;	
+	// 	}
+	// }
 }
 
 /*Updating images of dice given values of rollDice*/
